@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="cyberBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050814"/>
+      <stop offset="100%" stop-color="#0b112c"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#cyberBg2)"/>
+  <!-- Equalizer / Tech grid lines -->
+  <line x1="100" y1="400" x2="700" y2="400" stroke="#00ffff" stroke-width="2" opacity="0.5"/>
+  <line x1="200" y1="440" x2="600" y2="440" stroke="#ff00aa" stroke-width="2" opacity="0.5"/>
+  <text x="400" y="240" font-family="Segoe UI, Tahoma, sans-serif" font-size="30" font-weight="bold" fill="#00ffff" text-anchor="middle">🎧 CYBERPUNK LIVE STAGE 🎧</text>
+</svg>

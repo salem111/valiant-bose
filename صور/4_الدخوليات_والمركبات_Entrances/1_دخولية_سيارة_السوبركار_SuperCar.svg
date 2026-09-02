@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+  <defs>
+    <linearGradient id="carBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe066"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#8a6300"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#070712" rx="24"/>
+  <circle cx="300" cy="150" r="140" fill="url(#halo)"/>
+  <!-- Supercar Chassis Silhouette -->
+  <path d="M120,195 Q200,140 320,135 Q440,135 500,185 L520,215 L100,215 Z" fill="url(#carBody)"/>
+  <!-- Cabin Windows -->
+  <path d="M220,150 L310,145 L390,165 L220,165 Z" fill="#0c0d1a" stroke="#00f0ff" stroke-width="1.5"/>
+  <!-- Glowing Wheels -->
+  <circle cx="180" cy="215" r="28" fill="#151520" stroke="#ffd700" stroke-width="6"/>
+  <circle cx="440" cy="215" r="28" fill="#151520" stroke="#ffd700" stroke-width="6"/>
+  <!-- Neon Beam -->
+  <polygon points="100,195 20,170 20,230 100,210" fill="#00ffff" opacity="0.35"/>
+  <text x="300" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="22" font-weight="bold" fill="#ffe066" text-anchor="middle">👑 دخولية سيارة السوبر كار الذهبية 👑</text>
+</svg>

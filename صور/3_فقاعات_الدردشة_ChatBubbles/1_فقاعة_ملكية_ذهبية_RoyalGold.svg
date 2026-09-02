@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <defs>
+    <linearGradient id="goldBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1605"/>
+      <stop offset="50%" stop-color="#3d2b07"/>
+      <stop offset="100%" stop-color="#140e02"/>
+    </linearGradient>
+    <linearGradient id="goldBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe680"/>
+      <stop offset="30%" stop-color="#d4af37"/>
+      <stop offset="70%" stop-color="#fff5b8"/>
+      <stop offset="100%" stop-color="#997300"/>
+    </linearGradient>
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#ffd700" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect x="8" y="8" width="384" height="104" rx="24" fill="url(#goldBg)" stroke="url(#goldBorder)" stroke-width="3" filter="url(#goldGlow)"/>
+  <!-- Crown ornament -->
+  <path d="M40,25 L46,15 L52,25 L60,18 L58,32 L34,32 L32,18 Z" fill="url(#goldBorder)"/>
+  <circle cx="360" cy="24" r="5" fill="#ffe066"/>
+  <circle cx="372" cy="36" r="3" fill="#ffffff" opacity="0.8"/>
+</svg>

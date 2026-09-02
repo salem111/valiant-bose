@@ -1,0 +1,17 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+encore.gen.go
+encore.gen.cue
+/.encore
+/encore.gen
+/temp_extracted_*/
+/extract_voice_*.mjs
+
+# Firebase private configuration
+firebase-applet-config.json

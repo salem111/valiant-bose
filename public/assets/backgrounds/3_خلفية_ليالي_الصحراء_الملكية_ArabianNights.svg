@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="arabianSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#08071a"/>
+      <stop offset="50%" stop-color="#1b1240"/>
+      <stop offset="100%" stop-color="#3d1e4a"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#arabianSky)"/>
+  <!-- Golden Crescent Moon -->
+  <path d="M680,60 A50,50 0 1,0 720,130 A60,60 0 1,1 680,60 Z" fill="#ffd700"/>
+  <!-- Palace Minarets & Domes Silhouettes -->
+  <path d="M0,500 L0,380 Q100,340 200,380 Q300,310 400,360 Q500,290 600,370 Q700,340 800,390 L800,500 Z" fill="#110926"/>
+  <!-- Arabian Arch Glow -->
+  <path d="M280,500 L280,320 Q400,220 520,320 L520,500 Z" fill="none" stroke="#ffd700" stroke-width="4" opacity="0.6"/>
+  <!-- Hanging Lanterns -->
+  <line x1="320" y1="0" x2="320" y2="150" stroke="#ffd700" stroke-width="1.5"/>
+  <circle cx="320" cy="165" r="14" fill="#ffb700" stroke="#ffd700" stroke-width="2"/>
+  <line x1="480" y1="0" x2="480" y2="150" stroke="#ffd700" stroke-width="1.5"/>
+  <circle cx="480" cy="165" r="14" fill="#ffb700" stroke="#ffd700" stroke-width="2"/>
+  <text x="400" y="240" font-family="Segoe UI, Tahoma, sans-serif" font-size="32" font-weight="bold" fill="#ffd700" text-anchor="middle">🌙 ليالي الصحراء الملكية Arabian Nights 🕌</text>
+</svg>

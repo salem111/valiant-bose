@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="castleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="50%" stop-color="#7e22ce"/>
+      <stop offset="100%" stop-color="#3b0764"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#0a0518" rx="20"/>
+  <!-- Cloud base -->
+  <ellipse cx="200" cy="235" rx="140" ry="25" fill="#ffffff" opacity="0.3"/>
+  <ellipse cx="200" cy="230" rx="110" ry="20" fill="#ffffff" opacity="0.7"/>
+  <!-- Castle Walls & Towers -->
+  <rect x="140" y="130" width="120" height="90" fill="url(#castleGrad)"/>
+  <rect x="120" y="90" width="30" height="130" fill="url(#castleGrad)"/>
+  <polygon points="120,90 135,45 150,90" fill="#ffd700"/>
+  <rect x="250" y="90" width="30" height="130" fill="url(#castleGrad)"/>
+  <polygon points="250,90 265,45 280,90" fill="#ffd700"/>
+  <!-- Main High Tower -->
+  <rect x="180" y="70" width="40" height="80" fill="url(#castleGrad)"/>
+  <polygon points="175,70 200,20 225,70" fill="#ffd700"/>
+  <!-- Castle Gate -->
+  <path d="M185,220 L185,175 Q200,160 215,175 L215,220 Z" fill="#ffd700"/>
+  <text x="200" y="275" font-family="Segoe UI, Tahoma, sans-serif" font-size="20" font-weight="bold" fill="#e9d5ff" text-anchor="middle">🏰 القلعة السحرية الخيالية</text>
+</svg>

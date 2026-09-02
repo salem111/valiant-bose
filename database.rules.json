@@ -1,0 +1,225 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "rooms": {
+      ".read": "auth != null",
+      "$roomId": {
+        ".write": "auth != null && ((!data.exists() && newData.child('ownerId').val() === auth.uid) || (data.exists() && (data.child('ownerId').val() === auth.uid || data.child('mods').child(auth.uid).val() === true)))",
+        ".validate": "newData.child('hostId').val() === (data.exists() ? data.child('hostId').val() : newData.child('ownerId').val()) && newData.child('ownerId').val() === (data.exists() ? data.child('ownerId').val() : auth.uid)",
+        "mods": {
+          ".read": "auth != null",
+          ".write": "auth != null && root.child('rooms').child($roomId).child('ownerId').val() === auth.uid"
+        },
+        "members": {
+          "$userId": {
+            ".read": "auth != null",
+            ".write": "auth != null && auth.uid === $userId",
+            ".validate": "newData.child('id').val() === auth.uid"
+          }
+        },
+        "speaking": {
+          "$userId": {
+            ".read": "auth != null",
+            ".write": "auth != null && auth.uid === $userId",
+            ".validate": "newData.child('level').isNumber() && newData.child('level').val() >= 0 && newData.child('level').val() <= 100"
+          }
+        },
+        "seats": {
+          "$seatIndex": {
+            ".write": "auth != null && (root.child('rooms').child($roomId).child('ownerId').val() === auth.uid || root.child('rooms').child($roomId).child('mods').child(auth.uid).val() === true)",
+            "speakerUser": {
+              ".write": "auth != null && (root.child('rooms').child($roomId).child('ownerId').val() === auth.uid || root.child('rooms').child($roomId).child('mods').child(auth.uid).val() === true || (newData.exists() ? newData.child('id').val() === auth.uid : data.child('id').val() === auth.uid))",
+              ".validate": "!newData.exists() || newData.child('id').val() === auth.uid || root.child('rooms').child($roomId).child('ownerId').val() === auth.uid || root.child('rooms').child($roomId).child('mods').child(auth.uid).val() === true"
+            }
+          }
+        },
+        "pkBattle": {
+          ".read": "auth != null",
+          ".write": "auth != null && (root.child('rooms').child($roomId).child('ownerId').val() === auth.uid || root.child('rooms').child($roomId).child('mods').child(auth.uid).val() === true)"
+        },
+        "cinema": {
+          ".read": "auth != null",
+          ".write": "auth != null && (root.child('rooms').child($roomId).child('ownerId').val() === auth.uid || root.child('rooms').child($roomId).child('mods').child(auth.uid).val() === true)"
+        },
+        "liveMusic": {
+          ".read": "auth != null",
+          ".write": "auth != null && (root.child('rooms').child($roomId).child('ownerId').val() === auth.uid || root.child('rooms').child($roomId).child('mods').child(auth.uid).val() === true)"
+        },
+        "signals": {
+          "$targetUserId": {
+            ".read": "auth != null && auth.uid === $targetUserId",
+            "$fromUserId": {
+              ".write": "auth != null && auth.uid === $fromUserId",
+              ".validate": "newData.child('fromUserId').val() === auth.uid"
+            }
+          }
+        },
+        "messages": {
+          "$messageId": {
+            ".read": "auth != null",
+            ".write": "auth != null && (newData.child('senderId').val() === auth.uid || root.child('rooms').child($roomId).child('ownerId').val() === auth.uid || root.child('rooms').child($roomId).child('mods').child(auth.uid).val() === true)",
+            ".validate": "newData.child('senderId').val() === auth.uid || root.child('rooms').child($roomId).child('ownerId').val() === auth.uid || root.child('rooms').child($roomId).child('mods').child(auth.uid).val() === true"
+          }
+        }
+      }
+    },
+    "users": {
+      "$userId": {
+        ".read": "auth != null",
+        ".write": "auth != null && auth.uid === $userId",
+        "diamonds": {
+          ".validate": "!data.exists() ? newData.val() === 0 : newData.val() === data.val()"
+        },
+        "coins": {
+          ".validate": "!data.exists() ? newData.val() === 0 : newData.val() === data.val()"
+        },
+        "targetDiamonds": {
+          ".validate": "!data.exists() ? newData.val() === 0 : newData.val() === data.val()"
+        },
+        "targetRewardDiamonds": {
+          ".validate": "!data.exists() ? newData.val() === 0 : newData.val() === data.val()"
+        },
+        "agencyStats": {
+          "claimedTargets": {
+            ".validate": "newData.val() === data.val()"
+          },
+          "liveMinutes": {
+            ".validate": "newData.val() === data.val()"
+          },
+          "validDays": {
+            ".validate": "newData.val() === data.val()"
+          },
+          "touches": {
+            ".validate": "newData.val() === data.val()"
+          },
+          "targetProgress": {
+            ".validate": "newData.val() === data.val()"
+          }
+        },
+        "role": {
+          ".validate": "!data.exists() ? newData.val() === 'عضو VIP' : newData.val() === data.val()"
+        },
+        "isAdmin": {
+          ".validate": "!newData.exists() && !data.exists() || (data.exists() && newData.val() === data.val())"
+        },
+        "agencyId": {
+          ".validate": "!data.exists() ? (!newData.exists() || newData.val() === '' || newData.val() === false || newData.val() === 'member' || newData.val() === 'none') : newData.val() === data.val()"
+        },
+        "agencyName": {
+          ".validate": "!data.exists() ? (!newData.exists() || newData.val() === '' || newData.val() === false || newData.val() === 'member' || newData.val() === 'none') : newData.val() === data.val()"
+        },
+        "agencyCode": {
+          ".validate": "!data.exists() ? (!newData.exists() || newData.val() === '' || newData.val() === false || newData.val() === 'member' || newData.val() === 'none') : newData.val() === data.val()"
+        },
+        "agencyRole": {
+          ".validate": "!data.exists() ? (!newData.exists() || newData.val() === '' || newData.val() === false || newData.val() === 'member' || newData.val() === 'none') : newData.val() === data.val()"
+        },
+        "agencyMembershipStatus": {
+          ".validate": "!data.exists() ? (!newData.exists() || newData.val() === '' || newData.val() === false || newData.val() === 'member' || newData.val() === 'none') : newData.val() === data.val()"
+        },
+        "isAgencyOwner": {
+          ".validate": "!data.exists() ? (!newData.exists() || newData.val() === '' || newData.val() === false || newData.val() === 'member' || newData.val() === 'none') : newData.val() === data.val()"
+        },
+        "isAgencyHost": {
+          ".validate": "!data.exists() ? (!newData.exists() || newData.val() === '' || newData.val() === false || newData.val() === 'member' || newData.val() === 'none') : newData.val() === data.val()"
+        }
+      }
+    },
+    "users_status": {
+      "$userId": {
+        ".read": "auth != null",
+        ".write": "auth != null && auth.uid === $userId"
+      }
+    },
+    "agencies": {
+      ".read": "auth != null",
+      "$agencyId": {
+        ".write": "auth != null && ((!data.exists() && newData.child('ownerId').val() === auth.uid) || (data.exists() && data.child('ownerId').val() === auth.uid))",
+        "members": {
+          "$memberId": {
+            ".write": "auth != null && (auth.uid === $memberId || root.child('agencies').child($agencyId).child('ownerId').val() === auth.uid)"
+          }
+        }
+      }
+    },
+    "withdrawals": {
+      "$userId": {
+        ".read": "auth != null && auth.uid === $userId",
+        ".write": false
+      }
+    },
+    "room_live_music": {
+      ".read": "auth != null",
+      "$roomId": {
+        ".write": "auth != null && (root.child('rooms').child($roomId).child('ownerId').val() === auth.uid || (newData.exists() ? newData.child('playedBy').val() === auth.uid : data.child('playedBy').val() === auth.uid))"
+      }
+    },
+    "user_music_playlists": {
+      "$userId": {
+        ".read": "auth != null && auth.uid === $userId",
+        ".write": "auth != null && auth.uid === $userId"
+      }
+    },
+    ".info": {
+      ".read": true
+    },
+    "room_pk": {
+      ".read": "auth != null",
+      "$roomId": {
+        ".write": "auth != null && root.child('rooms').child($roomId).child('ownerId').val() === auth.uid",
+        ".validate": "newData.child('redTeam').exists() && newData.child('blueTeam').exists()"
+      }
+    },
+    "live_streams": {
+      ".read": "auth != null",
+      "$streamId": {
+        ".read": "auth != null",
+        ".write": "auth != null && ((!data.exists() && newData.child('ownerId').val() === auth.uid) || (data.exists() && data.child('ownerId').val() === auth.uid))",
+        ".validate": "newData.child('ownerId').val() === (data.exists() ? data.child('ownerId').val() : auth.uid) && (!data.exists() ? (!newData.child('viewers').exists() || newData.child('viewers').val() === 0) : (!newData.child('viewers').exists() || newData.child('viewers').val() === data.child('viewers').val()))"
+      }
+    },
+    "join_requests": {
+      ".read": "auth != null",
+      "$streamId": {
+        ".read": "auth != null",
+        "$userId": {
+          ".write": "auth != null && auth.uid === $userId || (auth != null && root.child('live_streams').child($streamId).child('ownerId').val() === auth.uid)",
+          ".validate": "newData.child('userId').val() === $userId && newData.child('streamId').val() === $streamId"
+        }
+      }
+    },
+    "challenge_requests": {
+      ".read": "auth != null",
+      "$requestId": {
+        ".write": "auth != null && ((!data.exists() && newData.child('senderId').val() === auth.uid) || (data.exists() && (data.child('senderId').val() === auth.uid || data.child('receiverId').val() === auth.uid)))",
+        ".validate": "newData.child('requestId').val() === $requestId && newData.child('senderId').isString() && newData.child('receiverId').isString()"
+      }
+    },
+    "room_cinema": {
+      ".read": "auth != null",
+      "$roomId": {
+        ".write": "auth != null && root.child('rooms').child($roomId).child('ownerId').val() === auth.uid"
+      }
+    },
+    "game_rocket": {
+      ".read": "auth != null",
+      "current_round": {
+        ".write": "auth != null && root.child('game_rocket').child('current_round').child('hostId').val() === auth.uid",
+        "bets": {
+          "$betId": {
+            ".read": "auth != null",
+            ".write": "auth != null && ((!data.exists() && newData.child('userId').val() === auth.uid) || (data.exists() && data.child('userId').val() === auth.uid))",
+            ".validate": "newData.child('userId').val() === auth.uid && newData.child('amount').isNumber() && newData.child('amount').val() > 0"
+          }
+        }
+      },
+      "reactions": {
+        "$reactionId": {
+          ".write": "auth != null && newData.child('id').val() === $reactionId",
+          ".validate": "newData.child('timestamp').isNumber()"
+        }
+      }
+    }
+  }
+}

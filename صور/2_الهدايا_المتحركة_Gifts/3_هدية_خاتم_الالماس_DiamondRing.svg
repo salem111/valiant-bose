@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="diamondSpark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#bbf2f6"/>
+      <stop offset="100%" stop-color="#40c4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#1a001a" rx="20"/>
+  <!-- Sparkling aura -->
+  <circle cx="200" cy="120" r="70" fill="#ff4081" opacity="0.2"/>
+  <!-- Ring Band -->
+  <ellipse cx="200" cy="165" rx="55" ry="45" fill="none" stroke="#ffd700" stroke-width="12"/>
+  <!-- Giant Diamond -->
+  <polygon points="200,60 250,95 230,135 170,135 150,95" fill="url(#diamondSpark)" stroke="#ffffff" stroke-width="2"/>
+  <polygon points="200,60 215,95 185,95" fill="#ffffff" opacity="0.6"/>
+  <!-- Sparkles -->
+  <polygon points="120,70 125,55 130,70 145,75 130,80 125,95 120,80 105,75" fill="#ffffff"/>
+  <polygon points="280,60 284,48 288,60 300,64 288,68 284,80 280,68 268,64" fill="#ffd700"/>
+  <text x="200" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="20" font-weight="bold" fill="#ff4081" text-anchor="middle">💍 خاتم الألماس الأسطوري</text>
+</svg>

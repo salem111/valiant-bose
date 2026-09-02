@@ -1,0 +1,17 @@
+{
+  "projectId": "salem-adae3",
+  "appId": "1:12660672530:web:c3f7deaba3b9e8188370cb",
+  "apiKey": "AIzaSyDLT4oOo6GQ3JrXUzIWKGPO_DC9APbiD_o",
+  "authDomain": "salem-adae3.firebaseapp.com",
+  "databaseURL": "https://salem-adae3-default-rtdb.asia-southeast1.firebasedatabase.app",
+  "firestoreDatabaseId": "ai-studio-saleem-86d3c689-4df4-42c3-8379-c2169046bdcf",
+  "storageBucket": "salem-adae3.firebasestorage.app",
+  "messagingSenderId": "12660672530",
+  "measurementId": "",
+  "oAuthClientId": "12660672530-n9rlb05jha2rv93qui1mbnni19l2ei97.apps.googleusercontent.com",
+  "recaptchaSiteKey": "",
+  "packageName": "com.saleem.saleemvoice2",
+  "androidAppId": "1:12660672530:android:7603d3ca258e60a68370cb",
+  "sha1": "70:35:c5:fa:eb:ef:8d:3f:d3:f7:c1:af:fb:3f:f9:cc:e2:31:ef:42",
+  "sha256": "a9:35:7f:83:93:09:3a:de:16:b1:70:66:45:27:2c:d5:b0:63:ac:c6:7a:11:f4:f9:a3:7d:8a:a0:ea:ac:04:30"
+}

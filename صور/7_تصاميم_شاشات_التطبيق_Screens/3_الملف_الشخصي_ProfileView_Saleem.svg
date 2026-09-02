@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 900" width="450" height="900" direction="rtl">
+  <defs>
+    <linearGradient id="profBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0c071e"/>
+      <stop offset="60%" stop-color="#150d33"/>
+      <stop offset="100%" stop-color="#0a0518"/>
+    </linearGradient>
+    <linearGradient id="walletCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#24144d"/>
+      <stop offset="100%" stop-color="#140a2e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#profBg)" rx="35"/>
+
+  <!-- Top Bar -->
+  <text x="35" y="55" font-family="Segoe UI" font-size="20" font-weight="bold" fill="#fff">صفحتي الشخصية</text>
+  <circle cx="400" cy="50" r="18" fill="#1c1138"/>
+  <text x="400" y="56" font-size="16" text-anchor="middle">⚙️</text>
+
+  <!-- User Info Section -->
+  <g transform="translate(25, 80)">
+    <!-- Avatar with Royal Gold Crown Frame -->
+    <circle cx="50" cy="50" r="42" fill="#7c3aed" stroke="#ffd700" stroke-width="3"/>
+    <text x="50" y="60" font-size="34" text-anchor="middle">👑</text>
+
+    <!-- Name & Badges -->
+    <text x="110" y="38" font-family="Segoe UI" font-size="18" font-weight="bold" fill="#fff">الكينغ سليم 🇸🇦</text>
+    <rect x="110" y="48" width="60" height="18" rx="9" fill="#ffd700"/>
+    <text x="140" y="61" font-family="Segoe UI" font-size="10" font-weight="bold" fill="#000" text-anchor="middle">VIP 6</text>
+
+    <rect x="175" y="48" width="60" height="18" rx="9" fill="#8b5cf6"/>
+    <text x="205" y="61" font-family="Segoe UI" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">Lv.50</text>
+
+    <text x="110" y="85" font-family="Segoe UI" font-size="12" fill="#94a3b8">Saleem ID: 777888 📋</text>
+  </g>
+
+  <!-- Stats Row (Following, Followers, Friends) -->
+  <g transform="translate(25, 190)">
+    <rect width="400" height="60" rx="16" fill="#170e36" stroke="#2d1b5c" stroke-width="1"/>
+    
+    <text x="65" y="30" font-family="Segoe UI" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">142</text>
+    <text x="65" y="48" font-family="Segoe UI" font-size="11" fill="#94a3b8" text-anchor="middle">متابِع</text>
+
+    <line x1="135" y1="15" x2="135" y2="45" stroke="#331c66" stroke-width="1"/>
+
+    <text x="200" y="30" font-family="Segoe UI" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">28.5k</text>
+    <text x="200" y="48" font-family="Segoe UI" font-size="11" fill="#94a3b8" text-anchor="middle">متابَعين</text>
+
+    <line x1="265" y1="15" x2="265" y2="45" stroke="#331c66" stroke-width="1"/>
+
+    <text x="335" y="30" font-family="Segoe UI" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">89</text>
+    <text x="335" y="48" font-family="Segoe UI" font-size="11" fill="#94a3b8" text-anchor="middle">أصدقاء</text>
+  </g>
+
+  <!-- Wallet Card (Coins & Diamonds with Recharge & Withdraw) -->
+  <g transform="translate(25, 270)">
+    <rect width="400" height="110" rx="20" fill="url(#walletCard)" stroke="#ffd700" stroke-width="1"/>
+    
+    <!-- Coins Balance -->
+    <text x="25" y="35" font-family="Segoe UI" font-size="12" fill="#94a3b8">🪙 رصيد الكوينز</text>
+    <text x="25" y="65" font-family="Segoe UI" font-size="20" font-weight="bold" fill="#ffd700">125,400</text>
+    <rect x="25" y="75" width="70" height="24" rx="12" fill="#ffd700"/>
+    <text x="60" y="91" font-family="Segoe UI" font-size="11" font-weight="bold" fill="#000" text-anchor="middle">شحن ⚡</text>
+
+    <!-- Diamonds Balance -->
+    <text x="220" y="35" font-family="Segoe UI" font-size="12" fill="#94a3b8">💎 رصيد الألماس</text>
+    <text x="220" y="65" font-family="Segoe UI" font-size="20" font-weight="bold" fill="#38bdf8">48,250</text>
+    <rect x="220" y="75" width="70" height="24" rx="12" fill="#38bdf8"/>
+    <text x="255" y="91" font-family="Segoe UI" font-size="11" font-weight="bold" fill="#000" text-anchor="middle">سحب 💵</text>
+  </g>
+
+  <!-- Real Feature Grid Items -->
+  <g transform="translate(25, 400)">
+    <!-- Item 1: Agency Center -->
+    <rect x="0" y="0" width="190" height="65" rx="16" fill="#170e36" stroke="#2d1b5c" stroke-width="1"/>
+    <circle cx="35" cy="32.5" r="18" fill="#06b6d4" opacity="0.2"/>
+    <text x="35" y="38" font-size="18" text-anchor="middle">🏢</text>
+    <text x="65" y="30" font-family="Segoe UI" font-size="13" font-weight="bold" fill="#fff">مركز الوكالة</text>
+    <text x="65" y="48" font-family="Segoe UI" font-size="10" fill="#94a3b8">إدارة المضيفين والأرباح</text>
+
+    <!-- Item 2: Backpack -->
+    <rect x="210" y="0" width="190" height="65" rx="16" fill="#170e36" stroke="#2d1b5c" stroke-width="1"/>
+    <circle cx="245" cy="32.5" r="18" fill="#a855f7" opacity="0.2"/>
+    <text x="245" y="38" font-size="18" text-anchor="middle">🎒</text>
+    <text x="275" y="30" font-family="Segoe UI" font-size="13" font-weight="bold" fill="#fff">الحقيبة</text>
+    <text x="275" y="48" font-family="Segoe UI" font-size="10" fill="#94a3b8">الإطارات والدخوليات</text>
+
+    <!-- Item 3: Cosmetics Store -->
+    <rect x="0" y="80" width="190" height="65" rx="16" fill="#170e36" stroke="#2d1b5c" stroke-width="1"/>
+    <circle cx="35" cy="112.5" r="18" fill="#ec4899" opacity="0.2"/>
+    <text x="35" y="118" font-size="18" text-anchor="middle">🛍️</text>
+    <text x="65" y="110" font-family="Segoe UI" font-size="13" font-weight="bold" fill="#fff">متجر الملابس</text>
+    <text x="65" y="128" font-family="Segoe UI" font-size="10" fill="#94a3b8">إطارات وفقاعات فاخرة</text>
+
+    <!-- Item 4: CP Couple Space -->
+    <rect x="210" y="80" width="190" height="65" rx="16" fill="#170e36" stroke="#2d1b5c" stroke-width="1"/>
+    <circle cx="245" cy="112.5" r="18" fill="#ef4444" opacity="0.2"/>
+    <text x="245" y="118" font-size="18" text-anchor="middle">💖</text>
+    <text x="275" y="110" font-family="Segoe UI" font-size="13" font-weight="bold" fill="#fff">مساحة الـ CP</text>
+    <text x="275" y="128" font-family="Segoe UI" font-size="10" fill="#94a3b8">توأم الروح والهدايا</text>
+
+    <!-- Item 5: Host Target System -->
+    <rect x="0" y="160" width="190" height="65" rx="16" fill="#170e36" stroke="#2d1b5c" stroke-width="1"/>
+    <circle cx="35" cy="192.5" r="18" fill="#f59e0b" opacity="0.2"/>
+    <text x="35" y="198" font-size="18" text-anchor="middle">🎯</text>
+    <text x="65" y="190" font-family="Segoe UI" font-size="13" font-weight="bold" fill="#fff">أهداف المضيف</text>
+    <text x="65" y="208" font-family="Segoe UI" font-size="10" fill="#94a3b8">تتبع الساعات والتارجت</text>
+
+    <!-- Item 6: Special ID Store -->
+    <rect x="210" y="160" width="190" height="65" rx="16" fill="#170e36" stroke="#2d1b5c" stroke-width="1"/>
+    <circle cx="245" cy="192.5" r="18" fill="#ffd700" opacity="0.2"/>
+    <text x="245" y="198" font-size="18" text-anchor="middle">👑</text>
+    <text x="275" y="190" font-family="Segoe UI" font-size="13" font-weight="bold" fill="#fff">الآيدي المميز</text>
+    <text x="275" y="208" font-family="Segoe UI" font-size="10" fill="#94a3b8">شراء أرقام VIP</text>
+  </g>
+
+  <!-- Bottom Nav -->
+  <g transform="translate(0, 815)">
+    <rect width="450" height="85" fill="#0c071a" stroke="#1f143d" stroke-width="1"/>
+    <text x="50" y="42" font-size="20" text-anchor="middle">🏠</text>
+    <text x="50" y="60" font-family="Segoe UI" font-size="10" fill="#64748b" text-anchor="middle">الرئيسية</text>
+
+    <text x="135" y="42" font-size="20" text-anchor="middle">📸</text>
+    <text x="135" y="60" font-family="Segoe UI" font-size="10" fill="#64748b" text-anchor="middle">لحظات</text>
+
+    <circle cx="225" cy="25" r="26" fill="#8b5cf6" stroke="#ffd700" stroke-width="2"/>
+    <text x="225" y="34" font-size="26" font-weight="bold" fill="#fff" text-anchor="middle">+</text>
+
+    <text x="315" y="42" font-size="20" text-anchor="middle">💬</text>
+    <text x="315" y="60" font-family="Segoe UI" font-size="10" fill="#64748b" text-anchor="middle">الرسائل</text>
+
+    <text x="400" y="42" font-size="20" text-anchor="middle">👤</text>
+    <text x="400" y="60" font-family="Segoe UI" font-size="10" font-weight="bold" fill="#8b5cf6" text-anchor="middle">أنا</text>
+  </g>
+</svg>

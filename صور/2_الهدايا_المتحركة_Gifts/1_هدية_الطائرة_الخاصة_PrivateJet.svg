@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="jetGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0a0"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#8a6300"/>
+    </linearGradient>
+    <linearGradient id="smokeBeam" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#00ffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#070914" rx="20"/>
+  <!-- Jet Contrails -->
+  <line x1="20" y1="170" x2="160" y2="150" stroke="url(#smokeBeam)" stroke-width="6" stroke-linecap="round"/>
+  <line x1="40" y1="190" x2="180" y2="165" stroke="url(#smokeBeam)" stroke-width="4" stroke-linecap="round"/>
+  <!-- Luxury Jet Body -->
+  <path d="M150,150 L320,110 Q370,115 360,130 L160,175 Z" fill="url(#jetGold)"/>
+  <!-- Wings -->
+  <polygon points="210,135 250,70 290,120" fill="url(#jetGold)"/>
+  <polygon points="180,165 220,230 250,160" fill="url(#jetGold)"/>
+  <!-- Cockpit Glass -->
+  <polygon points="320,115 350,118 340,128 315,123" fill="#00ffff"/>
+  <text x="200" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="20" font-weight="bold" fill="#ffe066" text-anchor="middle">🛩️ الطائرة الخاصة الفارهة VIP</text>
+</svg>

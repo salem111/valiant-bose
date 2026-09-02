@@ -1,0 +1,297 @@
+@import "tailwindcss";
+
+:root {
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+}
+
+html, body {
+  background-color: #030108;
+  background-image: 
+    radial-gradient(circle at 20% 0%, rgba(147, 51, 234, 0.25) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(251, 191, 36, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(76, 29, 149, 0.20) 0%, transparent 60%),
+    radial-gradient(circle at 90% 100%, rgba(217, 119, 6, 0.15) 0%, transparent 45%);
+  background-attachment: fixed;
+  color: #f8fafc;
+  font-family: 'Cairo', 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overscroll-behavior-y: contain;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Safe area padding utilities for notched Android/iOS devices */
+.pt-safe {
+  padding-top: calc(0.5rem + var(--sat));
+}
+.pb-safe {
+  padding-bottom: calc(0.5rem + var(--sab));
+}
+.pb-safe-nav {
+  padding-bottom: calc(4.25rem + var(--sab));
+}
+
+/* Hardware Acceleration Helpers for Smooth Android Animations */
+.gpu-layer {
+  transform: translateZ(0);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+/* Hide scrollbars globally across all elements and Android WebViews */
+* {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-corner {
+  display: none !important;
+  width: 0px !important;
+  height: 0px !important;
+  background: transparent !important;
+}
+
+/* Utility class for scrollable containers without visual scrollbars */
+.no-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  width: 0px !important;
+  height: 0px !important;
+  background: transparent !important;
+}
+
+/* Royal Black & Gold Helpers */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fffbeb 0%, #fef08a 25%, #f59e0b 60%, #d97706 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.purple-gradient-text {
+  background: linear-gradient(135deg, #f472b6 0%, #c084fc 50%, #818cf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 25px rgba(245, 158, 11, 0.45);
+}
+
+.purple-border-glow {
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.45);
+}
+
+/* Elite Glassmorphism & Metallic Sheen Cards */
+.card-luxury-glass {
+  background: linear-gradient(145deg, rgba(26, 16, 51, 0.75) 0%, rgba(13, 8, 26, 0.90) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 215, 0, 0.18);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.12), 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card-luxury-glass:hover {
+  border-color: rgba(255, 215, 0, 0.55);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.2), 0 12px 35px rgba(245, 158, 11, 0.22);
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+/* Luxury Interactive Glassmorphism Panels */
+.glass-panel-luxury {
+  background: linear-gradient(135deg, rgba(24, 15, 48, 0.8) 0%, rgba(11, 6, 24, 0.92) 100%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 215, 0, 0.15);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1), 0 12px 36px 0 rgba(0, 0, 0, 0.5);
+}
+
+.glass-panel-luxury:hover {
+  border-color: rgba(255, 215, 0, 0.45);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.2), 0 12px 36px 0 rgba(245, 158, 11, 0.25);
+}
+
+/* Royal Wine & Rose-Gold Luxury Classes from Reference Image */
+.card-wine-luxury {
+  background: linear-gradient(160deg, rgba(48, 12, 38, 0.85) 0%, rgba(26, 6, 22, 0.95) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1.5px solid rgba(251, 191, 36, 0.35);
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.25), 0 12px 36px rgba(0, 0, 0, 0.6);
+  border-radius: 1.5rem;
+}
+
+.card-wine-luxury:hover {
+  border-color: rgba(251, 191, 36, 0.65);
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.35), 0 14px 40px rgba(244, 63, 94, 0.25);
+}
+
+.ruby-card {
+  background: linear-gradient(160deg, rgba(65, 14, 45, 0.9) 0%, rgba(32, 5, 24, 0.95) 100%);
+  border: 1.5px solid rgba(244, 63, 94, 0.45);
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.2), 0 10px 28px rgba(225, 29, 72, 0.3);
+}
+
+.sapphire-card {
+  background: linear-gradient(160deg, rgba(16, 26, 65, 0.9) 0%, rgba(8, 12, 38, 0.95) 100%);
+  border: 1.5px solid rgba(56, 189, 248, 0.45);
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.2), 0 10px 28px rgba(14, 165, 233, 0.3);
+}
+
+.gold-title-glow {
+  background: linear-gradient(180deg, #ffffff 0%, #fef08a 25%, #f59e0b 60%, #b45309 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(245, 158, 11, 0.4));
+}
+
+.center-crown-orbit {
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.2) 0%, rgba(225, 29, 72, 0.1) 60%, transparent 80%);
+  border: 2px solid rgba(251, 191, 36, 0.6);
+  box-shadow: 0 0 30px rgba(245, 158, 11, 0.4), inset 0 0 20px rgba(245, 158, 11, 0.2);
+}
+
+/* VIP Room Additions */
+@keyframes goldDust {
+  0% { transform: translateY(0) scale(1); opacity: 0.3; }
+  50% { transform: translateY(-20px) scale(1.2); opacity: 0.8; }
+  100% { transform: translateY(-40px) scale(1); opacity: 0; }
+}
+
+.animate-gold-dust {
+  background-image: radial-gradient(circle, #fcd34d 1px, transparent 1px);
+  background-size: 30px 30px;
+  animation: goldDust 10s infinite linear;
+}
+
+@keyframes goldRipple {
+  0% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(251, 191, 36, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0); }
+}
+
+.gold-ripple-effect {
+  animation: goldRipple 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.vip-seat-glass {
+  background: linear-gradient(135deg, rgba(30, 20, 60, 0.8) 0%, rgba(15, 10, 30, 0.95) 100%);
+  backdrop-filter: blur(12px);
+  border: 1.5px solid rgba(251, 191, 36, 0.4);
+  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.1), 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.vip-seat-glass:hover {
+  border-color: rgba(251, 191, 36, 0.8);
+  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 6px 20px rgba(251, 191, 36, 0.2);
+}
+
+.vip-toolbar-glass {
+  background: linear-gradient(to top, rgba(5, 3, 10, 0.95) 0%, rgba(15, 8, 30, 0.85) 100%);
+  backdrop-filter: blur(24px);
+  border-top: 1px solid rgba(251, 191, 36, 0.25);
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.8);
+}
+
+/* --- VIP Leaderboard & Badges UI --- */
+
+.vip-podium-gold {
+  background: linear-gradient(145deg, rgba(245, 158, 11, 0.25) 0%, rgba(217, 119, 6, 0.1) 100%);
+  border: 2px solid rgba(251, 191, 36, 0.8);
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.3), inset 0 0 15px rgba(251, 191, 36, 0.2);
+}
+
+.vip-podium-silver {
+  background: linear-gradient(145deg, rgba(148, 163, 184, 0.25) 0%, rgba(71, 85, 105, 0.1) 100%);
+  border: 2px solid rgba(148, 163, 184, 0.8);
+  box-shadow: 0 0 20px rgba(148, 163, 184, 0.3), inset 0 0 15px rgba(148, 163, 184, 0.2);
+}
+
+.vip-podium-bronze {
+  background: linear-gradient(145deg, rgba(180, 83, 9, 0.25) 0%, rgba(120, 53, 15, 0.1) 100%);
+  border: 2px solid rgba(180, 83, 9, 0.8);
+  box-shadow: 0 0 20px rgba(180, 83, 9, 0.3), inset 0 0 15px rgba(180, 83, 9, 0.2);
+}
+
+.sticky-user-rank {
+  background: linear-gradient(90deg, rgba(146, 64, 14, 0.9) 0%, rgba(180, 83, 9, 0.95) 50%, rgba(146, 64, 14, 0.9) 100%);
+  border-top: 2px solid #fcd34d;
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.8), inset 0 2px 10px rgba(252, 211, 77, 0.3);
+  backdrop-filter: blur(12px);
+}
+
+.hot-news-card {
+  background: linear-gradient(135deg, rgba(88, 28, 135, 0.8) 0%, rgba(59, 7, 100, 0.95) 100%);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.1), 0 8px 25px rgba(0, 0, 0, 0.6);
+  position: relative;
+  overflow: hidden;
+}
+
+.hot-news-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.luxury-tab-active {
+  background: white;
+  color: #3b0764; /* deep purple text */
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(255,255,255,0.4);
+  border-radius: 9999px;
+}
+
+.luxury-tab-inactive {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+}
+
+.luxury-tab-inactive:hover {
+  background: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <defs>
+    <linearGradient id="emeraldBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022115"/>
+      <stop offset="100%" stop-color="#083d29"/>
+    </linearGradient>
+    <linearGradient id="emeraldBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ef2bb"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#00c878"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="384" height="104" rx="22" fill="url(#emeraldBg)" stroke="url(#emeraldBorder)" stroke-width="3"/>
+  <polygon points="360,20 372,28 360,36 348,28" fill="#4ef2bb"/>
+  <text x="200" y="65" font-family="Segoe UI, Tahoma, sans-serif" font-size="18" font-weight="bold" fill="#d4af37" text-anchor="middle">🌿 فقاعة الزمرد الملكي Emerald 👑</text>
+</svg>

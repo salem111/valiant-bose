@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="badgeGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff2a3"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#805e00"/>
+    </linearGradient>
+  </defs>
+  <polygon points="100,10 185,50 185,150 100,190 15,150 15,50" fill="#1a1202" stroke="url(#badgeGold)" stroke-width="7"/>
+  <polygon points="100,28 165,58 165,142 100,172 35,142 35,58" fill="url(#badgeGold)" opacity="0.2"/>
+  <!-- Crown Icon -->
+  <path d="M60,115 L60,90 L80,102 L100,75 L120,102 L140,90 L140,115 Z" fill="url(#badgeGold)"/>
+  <text x="100" y="148" font-family="Segoe UI, Tahoma, sans-serif" font-size="19" font-weight="900" fill="#fff" text-anchor="middle">KING VIP</text>
+</svg>

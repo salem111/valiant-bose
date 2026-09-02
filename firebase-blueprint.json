@@ -1,0 +1,27 @@
+{
+  "entities": {
+    "users": {
+      "title": "users",
+      "description": "User profiles and account settings",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "avatar": { "type": "string" },
+        "coins": { "type": "number" },
+        "diamonds": { "type": "number" },
+        "provider": { "type": "string" },
+        "isOnline": { "type": "boolean" },
+        "lastSeen": { "type": "string" },
+        "hasActiveRoom": { "type": "boolean" },
+        "levelStatus": { "type": "string" },
+        "role": { "type": "string" },
+        "gender": { "type": "string" },
+        "country": { "type": "string" },
+        "bio": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id", "name"]
+    }
+  }
+}

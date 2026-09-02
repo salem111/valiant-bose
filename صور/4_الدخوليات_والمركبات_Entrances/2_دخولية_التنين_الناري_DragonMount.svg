@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+  <defs>
+    <linearGradient id="fireDragon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff2200"/>
+      <stop offset="50%" stop-color="#ff7700"/>
+      <stop offset="100%" stop-color="#ffdd00"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#120402" rx="24"/>
+  <!-- Glowing Dragon Emblem -->
+  <path d="M300,60 C230,100 120,120 100,180 C170,180 240,150 300,200 C360,150 430,180 500,180 C480,120 370,100 300,60 Z" fill="url(#fireDragon)"/>
+  <text x="300" y="270" font-family="Segoe UI, Tahoma, sans-serif" font-size="22" font-weight="bold" fill="#ff8800" text-anchor="middle">🔥 دخولية التنين الناري الأسطوري 🔥</text>
+</svg>

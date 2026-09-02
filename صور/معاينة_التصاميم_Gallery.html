@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>معرض تصاميم سليم | Saleem Visual Assets Showcase</title>
+  <style>
+    :root {
+      --bg: #090614;
+      --card-bg: #140d28;
+      --accent: #ff007f;
+      --gold: #ffd700;
+      --cyan: #00f0ff;
+      --text: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--gold);
+      margin-bottom: 8px;
+      font-size: 2.2rem;
+    }
+
+    p.subtitle {
+      text-align: center;
+      color: #a19ec2;
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      background: var(--card-bg);
+      border: 2px solid #322057;
+      color: #fff;
+      padding: 10px 22px;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .tab-btn.active,
+    .tab-btn:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      box-shadow: 0 0 15px var(--accent);
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      color: var(--cyan);
+      margin: 30px 0 15px;
+      border-bottom: 2px solid #2d1854;
+      padding-bottom: 8px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 18px;
+      border: 1px solid #2d1b54;
+      padding: 18px;
+      text-align: center;
+      transition: 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: var(--gold);
+      box-shadow: 0 8px 25px rgba(255, 215, 0, 0.2);
+    }
+
+    .card img,
+    .card svg {
+      width: 100%;
+      max-height: 220px;
+      object-fit: contain;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+      color: #9d98c2;
+    }
+
+    .badge-tag {
+      display: inline-block;
+      background: rgba(255, 215, 0, 0.15);
+      color: var(--gold);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      margin-top: 8px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🎨 معرض تصاميم وعناصر تطبيق سليم (Saleem) 🌟</h1>
+  <p class="subtitle">استعرض جميع الإطارات، الهدايا، فقاعات الدردشة، الدخوليات، والخلفيات وشاشات التطبيق التفاعلية</p>
+
+  <div class="section-title">📱 شاشات التطبيق الكاملة (Full UI Screens)</div>
+  <div class="grid">
+    <div class="card">
+      <img src="7_تصاميم_شاشات_التطبيق_Screens/1_شاشة_الغرفة_الصوتية_VoiceRoom.svg" alt="Voice Room">
+      <h3>شاشة الروم الصوتي المتكاملة</h3>
+      <p>مقاعد المايك، المضيف، الدردشة الحية، الهدايا الطائرة</p>
+      <span class="badge-tag">Voice Room Live</span>
+    </div>
+    <div class="card">
+      <img src="7_تصاميم_شاشات_التطبيق_Screens/2_شاشة_الصفحة_الرئيسية_HomeScreen.svg" alt="Home Screen">
+      <h3>شاشة الاستكشاف والرئيسية</h3>
+      <p>البانرات، أقسام الغرف، معارك الـ PK والبطولات</p>
+      <span class="badge-tag">Home & Explore</span>
+    </div>
+  </div>
+
+  <div class="section-title">🎁 الهدايا الفاخرة والمتحركة (Animated & Luxury Gifts)</div>
+  <div class="grid">
+    <div class="card">
+      <img src="2_الهدايا_المتحركة_Gifts/1_هدية_الطائرة_الخاصة_PrivateJet.svg" alt="Private Jet">
+      <h3>طائرة خاصة نفاثة VIP</h3>
+      <p>تحلق عبر الشاشة مع خطوط دخان نيون</p>
+      <span class="badge-tag">Luxury Jet</span>
+    </div>
+    <div class="card">
+      <img src="2_الهدايا_المتحركة_Gifts/2_هدية_اليخت_الملكي_SuperYacht.svg" alt="Super Yacht">
+      <h3>اليخت الذهبي الفاخر</h3>
+      <p>أمواج بحرية مشعة وألعاب نارية</p>
+      <span class="badge-tag">Super Yacht</span>
+    </div>
+    <div class="card">
+      <img src="2_الهدايا_المتحركة_Gifts/3_هدية_خاتم_الالماس_DiamondRing.svg" alt="Diamond Ring">
+      <h3>خاتم الألماس الأسطوري</h3>
+      <p>ألماس مشع وقلوب حب متطايرة</p>
+      <span class="badge-tag">Romance Ring</span>
+    </div>
+    <div class="card">
+      <img src="2_الهدايا_المتحركة_Gifts/4_هدية_القلعة_السحرية_MagicCastle.svg" alt="Magic Castle">
+      <h3>القلعة السحرية الخيالية</h3>
+      <p>أبراج كريستالية وسحاب مضيء</p>
+      <span class="badge-tag">Fantasy Castle</span>
+    </div>
+  </div>
+
+  <div class="section-title">💬 فقاعات الدردشة والمحادثة (Chat Bubbles)</div>
+  <div class="grid">
+    <div class="card">
+      <img src="3_فقاعات_الدردشة_ChatBubbles/1_فقاعة_ملكية_ذهبية_RoyalGold.svg" alt="Royal Bubble">
+      <h3>فقاعة التاج الملكي الذهبي</h3>
+      <span class="badge-tag">Royal Gold</span>
+    </div>
+    <div class="card">
+      <img src="3_فقاعات_الدردشة_ChatBubbles/2_فقاعة_سايبربانك_نيون_CyberNeon.svg" alt="Cyber Bubble">
+      <h3>فقاعة السايبربانك والنيون</h3>
+      <span class="badge-tag">Neon Cyber</span>
+    </div>
+    <div class="card">
+      <img src="3_فقاعات_الدردشة_ChatBubbles/4_فقاعة_الجليد_الكريستالي_IceFrost.svg" alt="Frost Bubble">
+      <h3>فقاعة الجليد الكريستالي</h3>
+      <span class="badge-tag">Ice Frost</span>
+    </div>
+    <div class="card">
+      <img src="3_فقاعات_الدردشة_ChatBubbles/5_فقاعة_الزمرد_الملكي_RoyalEmerald.svg" alt="Emerald Bubble">
+      <h3>فقاعة الزمرد الملكي الفاخر</h3>
+      <span class="badge-tag">Royal Emerald</span>
+    </div>
+  </div>
+
+  <div class="section-title">🚗 الدخوليات والمركبات (Mounts & Entrances)</div>
+  <div class="grid">
+    <div class="card">
+      <img src="4_الدخوليات_والمركبات_Entrances/1_دخولية_سيارة_السوبركار_SuperCar.svg" alt="Supercar">
+      <h3>دخولية السوبر كار الذهبية</h3>
+      <span class="badge-tag">Supercar Mount</span>
+    </div>
+    <div class="card">
+      <img src="4_الدخوليات_والمركبات_Entrances/2_دخولية_التنين_الناري_DragonMount.svg" alt="Dragon Mount">
+      <h3>دخولية التنين الناري المجنح</h3>
+      <span class="badge-tag">Dragon Mount</span>
+    </div>
+  </div>
+
+  <div class="section-title">🎭 خلفيات الغرف الصوتية (Room Themes)</div>
+  <div class="grid">
+    <div class="card">
+      <img src="5_الخلفيات_Backgrounds/3_خلفية_ليالي_الصحراء_الملكية_ArabianNights.svg" alt="Arabian Nights">
+      <h3>ليالي الصحراء الملكية</h3>
+      <span class="badge-tag">Arabian Theme</span>
+    </div>
+    <div class="card">
+      <img src="5_الخلفيات_Backgrounds/4_خلفية_مجرة_الفضاء_CosmicGalaxy.svg" alt="Cosmic Galaxy">
+      <h3>مجرة الفضاء والأبراج</h3>
+      <span class="badge-tag">Cosmic Theme</span>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <defs>
+    <linearGradient id="pinkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a0518"/>
+      <stop offset="100%" stop-color="#18020d"/>
+    </linearGradient>
+    <linearGradient id="pinkBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff75c3"/>
+      <stop offset="50%" stop-color="#ffa6d5"/>
+      <stop offset="100%" stop-color="#ff2a85"/>
+    </linearGradient>
+    <filter id="pinkGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#ff2a85" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect x="8" y="8" width="384" height="104" rx="24" fill="url(#pinkBg)" stroke="url(#pinkBorder)" stroke-width="2.5" filter="url(#pinkGlow)"/>
+  <!-- Glowing Heart -->
+  <path d="M355,26 C355,20 345,20 345,26 C345,33 355,40 355,40 C355,40 365,33 365,26 C365,20 355,20 355,26 Z" fill="#ff3385"/>
+</svg>

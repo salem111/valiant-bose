@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <defs>
+    <linearGradient id="cyberBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0a081a"/>
+      <stop offset="100%" stop-color="#140c30"/>
+    </linearGradient>
+    <linearGradient id="neonBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ffff"/>
+      <stop offset="50%" stop-color="#ff00bb"/>
+      <stop offset="100%" stop-color="#00f0ff"/>
+    </linearGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#00ffff" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect x="8" y="8" width="384" height="104" rx="20" fill="url(#cyberBg)" stroke="url(#neonBorder)" stroke-width="2.5" filter="url(#neonGlow)"/>
+  <line x1="28" y1="96" x2="140" y2="96" stroke="#00ffff" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="360" cy="24" r="4" fill="#ff00bb"/>
+  <circle cx="348" cy="24" r="3" fill="#00ffff"/>
+</svg>

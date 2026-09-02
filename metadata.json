@@ -1,0 +1,11 @@
+{
+  "name": "SALEEM - عالم الدردشة الصوتية والألعاب",
+  "description": "منصة SALEEM للدردشة الصوتية التفاعلية، ألعاب الشدة والرهان الحماسي، نظام شحن العملات ولوحة التحكم",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

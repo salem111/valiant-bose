@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="loungeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0e0a1f"/>
+      <stop offset="50%" stop-color="#1d123d"/>
+      <stop offset="100%" stop-color="#07040f"/>
+    </linearGradient>
+    <linearGradient id="stageBeam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff00a0" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00d0ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#loungeGrad)"/>
+  <!-- Spotlights -->
+  <polygon points="0,0 800,0 520,500 280,500" fill="url(#stageBeam)"/>
+  <circle cx="400" cy="180" r="130" fill="none" stroke="#ffd700" stroke-width="2" opacity="0.4"/>
+  <circle cx="400" cy="180" r="170" fill="none" stroke="#00e5ff" stroke-width="1.5" stroke-dasharray="12,12" opacity="0.6"/>
+  <!-- Podium Floor -->
+  <ellipse cx="400" cy="420" rx="300" ry="60" fill="#140e2b" stroke="#7928ca" stroke-width="3"/>
+  <text x="400" y="190" font-family="Segoe UI, Tahoma, sans-serif" font-size="32" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="4">✨ VIP LUXURY ROOM ✨</text>
+</svg>

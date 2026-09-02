@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Royal Gold Aura Glow -->
+    <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.85"/>
+      <stop offset="45%" stop-color="#f59e0b" stop-opacity="0.4"/>
+      <stop offset="75%" stop-color="#d97706" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#78350f" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- 24K Liquid Gold Gradient -->
+    <linearGradient id="liquidGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="20%" stop-color="#fef08a"/>
+      <stop offset="45%" stop-color="#fbbf24"/>
+      <stop offset="75%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+
+    <!-- Ruby Gem Gradient -->
+    <radialGradient id="rubyRed" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#fecdd3"/>
+      <stop offset="30%" stop-color="#f43f5e"/>
+      <stop offset="70%" stop-color="#be123c"/>
+      <stop offset="100%" stop-color="#881337"/>
+    </radialGradient>
+
+    <!-- Diamond Sparkle Filter -->
+    <filter id="royalShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#f59e0b" flood-opacity="0.55"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#fff" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Golden Radiance -->
+  <circle cx="256" cy="256" r="230" fill="url(#goldGlow)" />
+
+  <!-- Radiating Sunburst Rays -->
+  <g opacity="0.4" stroke="#fbbf24" stroke-width="4" stroke-linecap="round">
+    <line x1="256" y1="40" x2="256" y2="80" />
+    <line x1="256" y1="432" x2="256" y2="472" />
+    <line x1="40" y1="256" x2="80" y2="256" />
+    <line x1="432" y1="256" x2="472" y2="256" />
+    <line x1="103" y1="103" x2="131" y2="131" />
+    <line x1="381" y1="381" x2="409" y2="409" />
+    <line x1="381" y1="103" x2="409" y2="75" />
+    <line x1="103" y1="381" x2="75" y2="409" />
+  </g>
+
+  <!-- Imperial King Crown Base Plate -->
+  <path d="M100 370 L412 370 L390 410 C380 425, 132 425, 122 410 Z"
+        fill="url(#liquidGold)" filter="url(#royalShadow)" />
+
+  <!-- Crown Base Jewels Inset -->
+  <path d="M125 385 L387 385 L375 405 L137 405 Z" fill="#78350f" opacity="0.6" />
+  <circle cx="160" cy="395" r="8" fill="url(#rubyRed)" />
+  <circle cx="208" cy="395" r="7" fill="#38bdf8" />
+  <circle cx="256" cy="395" r="10" fill="url(#rubyRed)" />
+  <circle cx="304" cy="395" r="7" fill="#38bdf8" />
+  <circle cx="352" cy="395" r="8" fill="url(#rubyRed)" />
+
+  <!-- Crown Main Peaks & Arches -->
+  <path d="M100 370 L80 200 L170 290 L256 120 L342 290 L432 200 L412 370 Z"
+        fill="url(#liquidGold)" filter="url(#royalShadow)" />
+
+  <!-- Crown Peak Jewels (Pearls / Rubies / Diamonds) -->
+  <circle cx="80" cy="195" r="14" fill="url(#rubyRed)" filter="url(#royalShadow)" />
+  <circle cx="170" cy="285" r="11" fill="#38bdf8" />
+  <circle cx="256" cy="110" r="20" fill="url(#rubyRed)" filter="url(#royalShadow)" />
+  <circle cx="342" cy="285" r="11" fill="#38bdf8" />
+  <circle cx="432" cy="195" r="14" fill="url(#rubyRed)" filter="url(#royalShadow)" />
+
+  <!-- Center Imperial Cross on Top of Main Ruby -->
+  <path d="M251 60 H261 V85 H251 Z M240 70 H272 V78 H240 Z" fill="#fef08a" filter="url(#royalShadow)" />
+
+  <!-- Gold Coins at Foot of Crown -->
+  <g transform="translate(0, 20)">
+    <!-- Left Gold Coin -->
+    <ellipse cx="150" cy="425" rx="35" ry="14" fill="url(#liquidGold)" stroke="#d97706" stroke-width="2" />
+    <ellipse cx="150" cy="422" rx="28" ry="10" fill="#fef08a" opacity="0.6" />
+    <!-- Right Gold Coin -->
+    <ellipse cx="362" cy="425" rx="35" ry="14" fill="url(#liquidGold)" stroke="#d97706" stroke-width="2" />
+    <ellipse cx="362" cy="422" rx="28" ry="10" fill="#fef08a" opacity="0.6" />
+    <!-- Center Big Stash Coin -->
+    <ellipse cx="256" cy="435" rx="48" ry="18" fill="url(#liquidGold)" stroke="#b45309" stroke-width="3" filter="url(#royalShadow)" />
+    <text x="256" y="442" font-size="18" font-weight="900" text-anchor="middle" fill="#78350f" font-family="sans-serif">👑</text>
+  </g>
+
+  <!-- Gleams & Sparkles ✨ -->
+  <g transform="translate(256, 110) scale(0.7)">
+    <path d="M0 -30 Q0 0 30 0 Q0 0 0 30 Q0 0 -30 0 Q0 0 0 -30 Z" fill="#fff" />
+  </g>
+  <g transform="translate(130, 240) scale(0.6)">
+    <path d="M0 -30 Q0 0 30 0 Q0 0 0 30 Q0 0 -30 0 Q0 0 0 -30 Z" fill="#fff" />
+  </g>
+  <g transform="translate(380, 240) scale(0.6)">
+    <path d="M0 -30 Q0 0 30 0 Q0 0 0 30 Q0 0 -30 0 Q0 0 0 -30 Z" fill="#fff" />
+  </g>
+</svg>

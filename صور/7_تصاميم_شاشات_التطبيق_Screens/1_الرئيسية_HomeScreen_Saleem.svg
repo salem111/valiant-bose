@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 900" width="450" height="900" direction="rtl">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0c071e"/>
+      <stop offset="60%" stop-color="#150d33"/>
+      <stop offset="100%" stop-color="#0a0518"/>
+    </linearGradient>
+    <linearGradient id="goldPill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a3b00"/>
+      <stop offset="100%" stop-color="#241b00"/>
+    </linearGradient>
+    <linearGradient id="diamondPill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00385c"/>
+      <stop offset="100%" stop-color="#001829"/>
+    </linearGradient>
+    <linearGradient id="bannerHero" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="plusGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" rx="35"/>
+
+  <!-- Android Status Bar Mock -->
+  <text x="35" y="28" font-family="Segoe UI" font-size="12" fill="#a19ebd">19:45</text>
+  <text x="415" y="28" font-family="Segoe UI" font-size="12" fill="#a19ebd" text-anchor="end">📶 🔋 98%</text>
+
+  <!-- 1. Real Header Component -->
+  <!-- User Avatar with Golden Frame -->
+  <circle cx="50" cy="70" r="22" fill="#7c3aed" stroke="#ffd700" stroke-width="2.5"/>
+  <text x="50" y="76" font-size="18" text-anchor="middle">👑</text>
+  <rect x="25" y="86" width="50" height="15" rx="7" fill="#ffd700"/>
+  <text x="50" y="97" font-family="Segoe UI" font-size="9" font-weight="bold" fill="#000" text-anchor="middle">VIP 6</text>
+
+  <!-- Coins & Diamonds Balance Pills -->
+  <rect x="85" y="55" width="105" height="32" rx="16" fill="url(#goldPill)" stroke="#ffd700" stroke-width="1"/>
+  <text x="95" y="76" font-size="14">🪙</text>
+  <text x="145" y="76" font-family="Segoe UI" font-size="13" font-weight="bold" fill="#ffd700" text-anchor="middle">125,400</text>
+
+  <rect x="200" y="55" width="100" height="32" rx="16" fill="url(#diamondPill)" stroke="#38bdf8" stroke-width="1"/>
+  <text x="210" y="76" font-size="13">💎</text>
+  <text x="255" y="76" font-family="Segoe UI" font-size="13" font-weight="bold" fill="#38bdf8" text-anchor="middle">48,250</text>
+
+  <!-- Search & Notifs Buttons -->
+  <circle cx="345" cy="71" r="17" fill="#201540" stroke="#3b2569" stroke-width="1"/>
+  <text x="345" y="77" font-size="15" text-anchor="middle">🔍</text>
+  <circle cx="395" cy="71" r="17" fill="#201540" stroke="#3b2569" stroke-width="1"/>
+  <text x="395" y="77" font-size="15" text-anchor="middle">🔔</text>
+  <circle cx="405" cy="61" r="4" fill="#ef4444"/>
+
+  <!-- 2. Real Banner Component -->
+  <rect x="20" y="115" width="410" height="135" rx="20" fill="url(#bannerHero)"/>
+  <text x="40" y="155" font-family="Segoe UI" font-size="18" font-weight="bold" fill="#ffffff">🔥 بطولة سليم للمعارك الكبرى PK</text>
+  <text x="40" y="180" font-family="Segoe UI" font-size="13" fill="#fef08a">جوائز ذهبية بقيمة 5,000,000 كوينز 💎</text>
+  <rect x="40" y="195" width="100" height="28" rx="14" fill="#ffffff"/>
+  <text x="90" y="214" font-family="Segoe UI" font-size="12" font-weight="bold" fill="#8b5cf6" text-anchor="middle">شارك الآن ⚡</text>
+
+  <!-- 3. Real Quick Categories (Moments, Games, Special ID, Agency, Spin) -->
+  <g transform="translate(20, 265)">
+    <!-- Cat 1: Moments -->
+    <rect x="0" y="0" width="75" height="70" rx="16" fill="#1c123b" stroke="#38216e" stroke-width="1"/>
+    <circle cx="37.5" cy="26" r="16" fill="#d946ef" opacity="0.2"/>
+    <text x="37.5" y="32" font-size="16" text-anchor="middle">📸</text>
+    <text x="37.5" y="58" font-family="Segoe UI" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">اللحظات</text>
+
+    <!-- Cat 2: Games -->
+    <rect x="85" y="0" width="75" height="70" rx="16" fill="#1c123b" stroke="#38216e" stroke-width="1"/>
+    <circle cx="122.5" cy="26" r="16" fill="#8b5cf6" opacity="0.2"/>
+    <text x="122.5" y="32" font-size="16" text-anchor="middle">🎮</text>
+    <text x="122.5" y="58" font-family="Segoe UI" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">الألعاب</text>
+
+    <!-- Cat 3: Special ID -->
+    <rect x="170" y="0" width="75" height="70" rx="16" fill="#1c123b" stroke="#38216e" stroke-width="1"/>
+    <circle cx="207.5" cy="26" r="16" fill="#f59e0b" opacity="0.2"/>
+    <text x="207.5" y="32" font-size="16" text-anchor="middle">👑</text>
+    <text x="207.5" y="58" font-family="Segoe UI" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">متجر الآيدي</text>
+
+    <!-- Cat 4: Agency -->
+    <rect x="255" y="0" width="75" height="70" rx="16" fill="#1c123b" stroke="#38216e" stroke-width="1"/>
+    <circle cx="292.5" cy="26" r="16" fill="#06b6d4" opacity="0.2"/>
+    <text x="292.5" y="32" font-size="16" text-anchor="middle">🏢</text>
+    <text x="292.5" y="58" font-family="Segoe UI" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">الوكالة</text>
+
+    <!-- Cat 5: Daily Spin -->
+    <rect x="340" y="0" width="70" height="70" rx="16" fill="#1c123b" stroke="#38216e" stroke-width="1"/>
+    <circle cx="375" cy="26" r="16" fill="#ec4899" opacity="0.2"/>
+    <text x="375" y="32" font-size="16" text-anchor="middle">🎡</text>
+    <text x="375" y="58" font-family="Segoe UI" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">عجلة الحظ</text>
+  </g>
+
+  <!-- 4. Real Room Tabs (Explore, Voice, Video, PK) -->
+  <g transform="translate(20, 350)">
+    <rect x="0" y="0" width="85" height="34" rx="17" fill="#8b5cf6"/>
+    <text x="42.5" y="22" font-family="Segoe UI" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">استكشاف 🔥</text>
+
+    <rect x="95" y="0" width="80" height="34" rx="17" fill="#180e30"/>
+    <text x="135" y="22" font-family="Segoe UI" font-size="12" fill="#a19ebd" text-anchor="middle">صوتية 🎙️</text>
+
+    <rect x="185" y="0" width="80" height="34" rx="17" fill="#180e30"/>
+    <text x="225" y="22" font-family="Segoe UI" font-size="12" fill="#a19ebd" text-anchor="middle">فيديو 📹</text>
+
+    <rect x="275" y="0" width="80" height="34" rx="17" fill="#180e30"/>
+    <text x="315" y="22" font-family="Segoe UI" font-size="12" fill="#a19ebd" text-anchor="middle">معارك ⚔️</text>
+  </g>
+
+  <!-- 5. Real Room Cards Grid -->
+  <!-- Room 1 -->
+  <g transform="translate(20, 400)">
+    <rect width="195" height="195" rx="18" fill="#160e33" stroke="#2d1b5c" stroke-width="1.5"/>
+    <rect x="8" y="8" width="179" height="105" rx="14" fill="#24144d"/>
+    <!-- Host Avatar with Red Dragon Frame -->
+    <circle cx="97.5" cy="55" r="28" fill="#a855f7" stroke="#ef4444" stroke-width="3"/>
+    <text x="97.5" y="63" font-size="24" text-anchor="middle">🐉</text>
+    <!-- Live Heat Badge -->
+    <rect x="15" y="15" width="60" height="18" rx="9" fill="#000000" opacity="0.7"/>
+    <text x="45" y="28" font-family="Segoe UI" font-size="10" font-weight="bold" fill="#f59e0b" text-anchor="middle">🔥 3.8k</text>
+    <!-- Country Flag -->
+    <text x="175" y="28" font-size="14" text-anchor="end">🇸🇦</text>
+    
+    <!-- Title & Host -->
+    <text x="12" y="132" font-family="Segoe UI" font-size="13" font-weight="bold" fill="#fff">سهرة طرب وفلة 🎶</text>
+    <text x="12" y="152" font-family="Segoe UI" font-size="11" fill="#94a3b8">المضيف: الكينغ سليم 👑</text>
+    
+    <!-- Tag Pill -->
+    <rect x="12" y="162" width="55" height="18" rx="9" fill="#8b5cf6" opacity="0.2"/>
+    <text x="39.5" y="175" font-family="Segoe UI" font-size="9" fill="#c084fc" text-anchor="middle">دردشة ووناسة</text>
+    <text x="175" y="175" font-family="Segoe UI" font-size="11" fill="#38bdf8" text-anchor="end">🎙️ 8/8</text>
+  </g>
+
+  <!-- Room 2 -->
+  <g transform="translate(230, 400)">
+    <rect width="195" height="195" rx="18" fill="#160e33" stroke="#2d1b5c" stroke-width="1.5"/>
+    <rect x="8" y="8" width="179" height="105" rx="14" fill="#24144d"/>
+    <!-- Host Avatar with Emperor Gold Frame -->
+    <circle cx="97.5" cy="55" r="28" fill="#ec4899" stroke="#eab308" stroke-width="3"/>
+    <text x="97.5" y="63" font-size="24" text-anchor="middle">👸</text>
+    <!-- Live Heat Badge -->
+    <rect x="15" y="15" width="60" height="18" rx="9" fill="#000000" opacity="0.7"/>
+    <text x="45" y="28" font-family="Segoe UI" font-size="10" font-weight="bold" fill="#f59e0b" text-anchor="middle">🔥 2.1k</text>
+    <!-- Country Flag -->
+    <text x="175" y="28" font-size="14" text-anchor="end">🇦🇪</text>
+    
+    <!-- Title & Host -->
+    <text x="12" y="132" font-family="Segoe UI" font-size="13" font-weight="bold" fill="#fff">روم النجوم VIP ✨</text>
+    <text x="12" y="152" font-family="Segoe UI" font-size="11" fill="#94a3b8">المضيفة: الأميرة 💖</text>
+    
+    <!-- Tag Pill -->
+    <rect x="12" y="162" width="55" height="18" rx="9" fill="#ec4899" opacity="0.2"/>
+    <text x="39.5" y="175" font-family="Segoe UI" font-size="9" fill="#f472b6" text-anchor="middle">حفلة وفعاليات</text>
+    <text x="175" y="175" font-family="Segoe UI" font-size="11" fill="#38bdf8" text-anchor="end">🎙️ 5/8</text>
+  </g>
+
+  <!-- 6. Real Bottom Navigation Bar -->
+  <g transform="translate(0, 815)">
+    <rect width="450" height="85" fill="#0c071a" stroke="#1f143d" stroke-width="1"/>
+    
+    <!-- Home Tab Active -->
+    <text x="50" y="42" font-size="20" text-anchor="middle">🏠</text>
+    <text x="50" y="60" font-family="Segoe UI" font-size="10" font-weight="bold" fill="#8b5cf6" text-anchor="middle">الرئيسية</text>
+
+    <!-- Moments Tab -->
+    <text x="135" y="42" font-size="20" text-anchor="middle">📸</text>
+    <text x="135" y="60" font-family="Segoe UI" font-size="10" fill="#64748b" text-anchor="middle">لحظات</text>
+
+    <!-- Center Glowing (+) Create Button -->
+    <circle cx="225" cy="25" r="26" fill="url(#plusGlow)" stroke="#ffd700" stroke-width="2"/>
+    <text x="225" y="34" font-size="26" font-weight="bold" fill="#fff" text-anchor="middle">+</text>
+
+    <!-- Messages Tab -->
+    <text x="315" y="42" font-size="20" text-anchor="middle">💬</text>
+    <text x="315" y="60" font-family="Segoe UI" font-size="10" fill="#64748b" text-anchor="middle">الرسائل</text>
+
+    <!-- Profile Tab -->
+    <text x="400" y="42" font-size="20" text-anchor="middle">👤</text>
+    <text x="400" y="60" font-family="Segoe UI" font-size="10" fill="#64748b" text-anchor="middle">أنا</text>
+  </g>
+</svg>

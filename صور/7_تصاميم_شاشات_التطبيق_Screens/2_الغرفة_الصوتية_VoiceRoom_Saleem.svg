@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 900" width="450" height="900" direction="rtl">
+  <defs>
+    <linearGradient id="roomThemeBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b081e"/>
+      <stop offset="40%" stop-color="#180e3d"/>
+      <stop offset="100%" stop-color="#06030f"/>
+    </linearGradient>
+    <linearGradient id="hostGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <linearGradient id="pkRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+    <linearGradient id="pkBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#roomThemeBg)" rx="35"/>
+
+  <!-- Top Navigation in Voice Room Modal -->
+  <g transform="translate(15, 30)">
+    <!-- Room Icon & Info Pill -->
+    <rect width="210" height="46" rx="23" fill="#180e36" stroke="#331c66" stroke-width="1"/>
+    <circle cx="23" cy="23" r="19" fill="#7c3aed"/>
+    <text x="23" y="30" font-size="18" text-anchor="middle">👑</text>
+    <text x="50" y="20" font-family="Segoe UI" font-size="12" font-weight="bold" fill="#fff">سهرة سليم الملكية</text>
+    <text x="50" y="36" font-family="Segoe UI" font-size="10" fill="#f59e0b">ID: 889900 📋 | 🔥 12.8k</text>
+
+    <!-- Top 3 Supporters Mini Avatars -->
+    <circle cx="250" cy="23" r="14" fill="#ffd700" stroke="#000" stroke-width="1.5"/>
+    <text x="250" y="28" font-size="11" text-anchor="middle">🥇</text>
+    <circle cx="275" cy="23" r="14" fill="#cbd5e1" stroke="#000" stroke-width="1.5"/>
+    <text x="275" y="28" font-size="11" text-anchor="middle">🥈</text>
+    <circle cx="300" cy="23" r="14" fill="#b45309" stroke="#000" stroke-width="1.5"/>
+    <text x="300" y="28" font-size="11" text-anchor="middle">🥉</text>
+
+    <!-- Cup & Exit Buttons -->
+    <circle cx="350" cy="23" r="17" fill="#24144d"/>
+    <text x="350" y="29" font-size="15" text-anchor="middle">🏆</text>
+    <circle cx="390" cy="23" r="17" fill="#ef4444" opacity="0.8"/>
+    <text x="390" y="29" font-size="14" fill="#fff" text-anchor="middle">✕</text>
+  </g>
+
+  <!-- Live Agency Session Target Banner -->
+  <rect x="20" y="88" width="410" height="26" rx="13" fill="#24144d" stroke="#f59e0b" stroke-width="1"/>
+  <text x="35" y="105" font-family="Segoe UI" font-size="11" font-weight="bold" fill="#ffd700">⏱️ البث: 01:34:20 | الهدف اليومي: 75,000 / 100,000 💎</text>
+
+  <!-- PK Battle Bar Overlay -->
+  <g transform="translate(20, 125)">
+    <rect width="410" height="32" rx="16" fill="#000"/>
+    <rect width="240" height="32" rx="16" fill="url(#pkRed)"/>
+    <rect x="230" width="180" height="32" rx="16" fill="url(#pkBlue)"/>
+    <!-- Scores -->
+    <text x="30" y="21" font-family="Segoe UI" font-size="14" font-weight="900" fill="#fff">فريق النيران 🔥 24,500</text>
+    <text x="380" y="21" font-family="Segoe UI" font-size="14" font-weight="900" fill="#fff" text-anchor="end">16,200 ⚡ فريق الصقور</text>
+    <!-- Center VS Badge -->
+    <circle cx="215" cy="16" r="16" fill="#ffd700" stroke="#000" stroke-width="2"/>
+    <text x="215" y="22" font-family="Segoe UI" font-size="11" font-weight="900" fill="#000" text-anchor="middle">VS</text>
+  </g>
+
+  <!-- 8-Seat Voice Grid Layout with Frames & Mic Wave Animations -->
+  <!-- Host Seat -->
+  <g transform="translate(225, 215)">
+    <!-- Animated Speaking Wave Ring -->
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#22c55e" stroke-width="3" stroke-dasharray="6,6"/>
+    <!-- Host Avatar with Royal Crown Frame -->
+    <circle cx="0" cy="0" r="34" fill="#3b0764" stroke="#ffd700" stroke-width="3.5"/>
+    <text x="0" y="8" font-size="28" text-anchor="middle">👑</text>
+    <rect x="-35" y="40" width="70" height="18" rx="9" fill="#ffd700"/>
+    <text x="0" y="53" font-family="Segoe UI" font-size="10" font-weight="bold" fill="#000" text-anchor="middle">سليم (مضيف)</text>
+  </g>
+
+  <!-- Guest Seats (Row 1) -->
+  <g transform="translate(65, 305)">
+    <circle cx="0" cy="0" r="28" fill="#1b1138" stroke="#a855f7" stroke-width="2"/>
+    <text x="0" y="6" font-size="18" text-anchor="middle">😎</text>
+    <rect x="-28" y="32" width="56" height="16" rx="8" fill="#1b1138"/>
+    <text x="0" y="44" font-family="Segoe UI" font-size="9" fill="#fff" text-anchor="middle">أحمد</text>
+  </g>
+  <g transform="translate(170, 305)">
+    <circle cx="0" cy="0" r="28" fill="#1b1138" stroke="#ec4899" stroke-width="2"/>
+    <text x="0" y="6" font-size="18" text-anchor="middle">💖</text>
+    <rect x="-28" y="32" width="56" height="16" rx="8" fill="#1b1138"/>
+    <text x="0" y="44" font-family="Segoe UI" font-size="9" fill="#fff" text-anchor="middle">نور</text>
+  </g>
+  <g transform="translate(280, 305)">
+    <circle cx="0" cy="0" r="28" fill="#1b1138" stroke="#06b6d4" stroke-width="2"/>
+    <text x="0" y="6" font-size="18" text-anchor="middle">⚡</text>
+    <rect x="-28" y="32" width="56" height="16" rx="8" fill="#1b1138"/>
+    <text x="0" y="44" font-family="Segoe UI" font-size="9" fill="#fff" text-anchor="middle">الفهد</text>
+  </g>
+  <g transform="translate(385, 305)">
+    <circle cx="0" cy="0" r="28" fill="#1b1138" stroke="#475569" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <text x="0" y="6" font-size="14" fill="#64748b" text-anchor="middle">4</text>
+    <text x="0" y="44" font-family="Segoe UI" font-size="9" fill="#64748b" text-anchor="middle">متاح</text>
+  </g>
+
+  <!-- Guest Seats (Row 2) -->
+  <g transform="translate(65, 390)">
+    <circle cx="0" cy="0" r="28" fill="#1b1138" stroke="#475569" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <text x="0" y="6" font-size="14" fill="#64748b" text-anchor="middle">5</text>
+    <text x="0" y="44" font-family="Segoe UI" font-size="9" fill="#64748b" text-anchor="middle">متاح</text>
+  </g>
+  <g transform="translate(170, 390)">
+    <circle cx="0" cy="0" r="28" fill="#1b1138" stroke="#475569" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <text x="0" y="6" font-size="14" fill="#64748b" text-anchor="middle">6</text>
+    <text x="0" y="44" font-family="Segoe UI" font-size="9" fill="#64748b" text-anchor="middle">متاح</text>
+  </g>
+  <g transform="translate(280, 390)">
+    <circle cx="0" cy="0" r="28" fill="#1b1138" stroke="#475569" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <text x="0" y="6" font-size="14" fill="#64748b" text-anchor="middle">7</text>
+    <text x="0" y="44" font-family="Segoe UI" font-size="9" fill="#64748b" text-anchor="middle">متاح</text>
+  </g>
+  <g transform="translate(385, 390)">
+    <circle cx="0" cy="0" r="28" fill="#1b1138" stroke="#475569" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <text x="0" y="6" font-size="14" fill="#64748b" text-anchor="middle">8</text>
+    <text x="0" y="44" font-family="Segoe UI" font-size="9" fill="#64748b" text-anchor="middle">متاح</text>
+  </g>
+
+  <!-- Live Gift Announcement Floating Banner -->
+  <g transform="translate(20, 460)">
+    <rect width="410" height="45" rx="14" fill="#2d1254" stroke="#ffd700" stroke-width="1.5"/>
+    <circle cx="30" cy="22.5" r="16" fill="#ffd700"/>
+    <text x="30" y="28" font-size="16" text-anchor="middle">🛩️</text>
+    <text x="60" y="28" font-family="Segoe UI" font-size="13" font-weight="bold" fill="#fff">الكينغ سليم أرسل [طائرة نفاثة VIP] إلى المضيف!</text>
+  </g>
+
+  <!-- Real-time Voice Room Chat Feed -->
+  <g transform="translate(20, 520)">
+    <rect width="410" height="280" rx="18" fill="#080414" opacity="0.75"/>
+    
+    <!-- Chat Msg 1 with Cyber Bubble -->
+    <rect x="15" y="15" width="280" height="42" rx="12" fill="#150d30" stroke="#06b6d4" stroke-width="1"/>
+    <text x="25" y="32" font-family="Segoe UI" font-size="11" font-weight="bold" fill="#06b6d4">Lv.35 ⚡ الفهد:</text>
+    <text x="25" y="47" font-family="Segoe UI" font-size="11" fill="#fff">مساء الفل والسرور على أحلى روم! 🌟</text>
+
+    <!-- Chat Msg 2 with Royal Gold Bubble -->
+    <rect x="15" y="68" width="310" height="42" rx="12" fill="#2b1c04" stroke="#ffd700" stroke-width="1.5"/>
+    <text x="25" y="85" font-family="Segoe UI" font-size="11" font-weight="bold" fill="#ffd700">VIP 6 👑 الكينغ سليم:</text>
+    <text x="25" y="100" font-family="Segoe UI" font-size="11" fill="#fff">منورين جميعاً، يلا شعلوا الـ PK يا أبطال! 🔥</text>
+
+    <!-- Chat Msg 3 with Pink Romance Bubble -->
+    <rect x="15" y="120" width="290" height="42" rx="12" fill="#29071c" stroke="#ec4899" stroke-width="1"/>
+    <text x="25" y="137" font-family="Segoe UI" font-size="11" font-weight="bold" fill="#ec4899">CP 💖 نور:</text>
+    <text x="25" y="152" font-family="Segoe UI" font-size="11" fill="#fff">شكراً على الهدايا والذوق الراقي 🌹</text>
+  </g>
+
+  <!-- Bottom Voice Room Control Toolbar -->
+  <g transform="translate(20, 820)">
+    <rect width="410" height="60" rx="20" fill="#150c2e" stroke="#2a1654" stroke-width="1"/>
+    
+    <!-- Mic Toggle Button (Green Active) -->
+    <circle cx="40" cy="30" r="20" fill="#22c55e"/>
+    <text x="40" y="36" font-size="17" fill="#fff" text-anchor="middle">🎙️</text>
+
+    <!-- Voice FX / Equalizer -->
+    <circle cx="95" cy="30" r="20" fill="#2d1a5e"/>
+    <text x="95" y="36" font-size="16" text-anchor="middle">🎛️</text>
+
+    <!-- Music Player Button -->
+    <circle cx="150" cy="30" r="20" fill="#2d1a5e"/>
+    <text x="150" y="36" font-size="16" text-anchor="middle">🎵</text>
+
+    <!-- Games / Mini Games -->
+    <circle cx="205" cy="30" r="20" fill="#2d1a5e"/>
+    <text x="205" y="36" font-size="16" text-anchor="middle">🎮</text>
+
+    <!-- Chat Message Input Box -->
+    <rect x="240" y="14" width="105" height="32" rx="16" fill="#0c071a"/>
+    <text x="292" y="34" font-family="Segoe UI" font-size="11" fill="#64748b" text-anchor="middle">اكتب رسالة...</text>
+
+    <!-- Giant Send Gift Button -->
+    <circle cx="375" cy="30" r="24" fill="#ec4899" stroke="#ffd700" stroke-width="1.5"/>
+    <text x="375" y="37" font-size="20" text-anchor="middle">🎁</text>
+  </g>
+</svg>

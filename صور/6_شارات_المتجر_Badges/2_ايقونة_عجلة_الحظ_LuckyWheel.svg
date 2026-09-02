@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="wheelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff0077"/>
+      <stop offset="50%" stop-color="#ffaa00"/>
+      <stop offset="100%" stop-color="#7700ff"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="85" fill="#0d081f" stroke="url(#wheelGrad)" stroke-width="8"/>
+  <circle cx="100" cy="100" r="30" fill="#ffd700"/>
+  <text x="100" y="107" font-family="Segoe UI, Tahoma, sans-serif" font-size="20" font-weight="bold" fill="#000" text-anchor="middle">LUCKY</text>
+</svg>

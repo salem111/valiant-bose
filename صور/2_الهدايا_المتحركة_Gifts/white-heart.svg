@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Glow -->
+    <radialGradient id="heartGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#e0f2fe" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#38bdf8" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- 3D Heart Gradient -->
+    <linearGradient id="heartBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#f8fafc"/>
+      <stop offset="60%" stop-color="#e2e8f0"/>
+      <stop offset="85%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+
+    <!-- Crystal Diamond Facet Top Left -->
+    <linearGradient id="facetHighlight" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Golden Crystal Rim -->
+    <linearGradient id="goldRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="50%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+
+    <filter id="crystalShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0284c7" flood-opacity="0.45"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#ffffff" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="256" cy="256" r="230" fill="url(#heartGlow)" />
+
+  <!-- Outer Golden/Diamond Halo -->
+  <path d="M256 448 C240 435, 70 310, 60 190 C50 78, 175 45, 256 140 C337 45, 462 78, 452 190 C442 310, 272 435, 256 448 Z"
+        fill="none" stroke="url(#goldRim)" stroke-width="8" opacity="0.85" filter="url(#crystalShadow)" />
+
+  <!-- Main 3D White Heart -->
+  <path d="M256 440 C242 428, 76 306, 68 192 C60 84, 180 52, 256 144 C332 52, 452 84, 444 192 C436 306, 270 428, 256 440 Z"
+        fill="url(#heartBody)" filter="url(#crystalShadow)" />
+
+  <!-- Inner Soft Bevel -->
+  <path d="M256 425 C244 414, 90 298, 82 194 C76 96, 186 68, 256 150 C326 68, 436 96, 430 194 C422 298, 268 414, 256 425 Z"
+        fill="#f8fafc" opacity="0.6" />
+
+  <!-- Diamond Facet 1 (Left Lobe Shine) -->
+  <path d="M110 160 C100 110, 160 80, 220 110 C240 120, 250 140, 250 160 C230 150, 170 140, 120 180 Z"
+        fill="url(#facetHighlight)" />
+
+  <!-- Diamond Facet 2 (Center Crystal Gleam) -->
+  <path d="M256 160 L280 260 L256 380 L232 260 Z"
+        fill="#ffffff" opacity="0.75" />
+
+  <!-- Left Facet -->
+  <polygon points="256,160 232,260 140,220 170,140" fill="#e2e8f0" opacity="0.65" />
+  <!-- Right Facet -->
+  <polygon points="256,160 280,260 372,220 342,140" fill="#ffffff" opacity="0.8" />
+  <!-- Bottom Left Facet -->
+  <polygon points="256,380 232,260 140,220 190,320" fill="#cbd5e1" opacity="0.5" />
+  <!-- Bottom Right Facet -->
+  <polygon points="256,380 280,260 372,220 322,320" fill="#f1f5f9" opacity="0.7" />
+
+  <!-- Magic Sparkles ✨ -->
+  <g transform="translate(360, 100) scale(0.9)">
+    <path d="M0 -30 Q0 0 30 0 Q0 0 0 30 Q0 0 -30 0 Q0 0 0 -30 Z" fill="#ffffff" filter="url(#crystalShadow)" />
+    <circle cx="0" cy="0" r="6" fill="#fef08a" />
+  </g>
+
+  <g transform="translate(130, 290) scale(0.65)">
+    <path d="M0 -30 Q0 0 30 0 Q0 0 0 30 Q0 0 -30 0 Q0 0 0 -30 Z" fill="#ffffff" filter="url(#crystalShadow)" />
+    <circle cx="0" cy="0" r="5" fill="#fef08a" />
+  </g>
+
+  <g transform="translate(256, 75) scale(0.55)">
+    <path d="M0 -30 Q0 0 30 0 Q0 0 0 30 Q0 0 -30 0 Q0 0 0 -30 Z" fill="#ffffff" />
+  </g>
+
+  <g transform="translate(390, 270) scale(0.5)">
+    <path d="M0 -30 Q0 0 30 0 Q0 0 0 30 Q0 0 -30 0 Q0 0 0 -30 Z" fill="#ffffff" />
+  </g>
+</svg>
